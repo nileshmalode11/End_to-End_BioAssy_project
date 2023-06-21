@@ -1,0 +1,173 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+
+df746_1284_train:
+  filepath: C:\Users\Lenovo\Desktop\work\bio_assay_project\bio-assay-project\data\01_raw\AID746AID1284red_train.csv.zip
+  type: pandas.CSVDataSet
+  layer: raw
+
+df746_1284_test:
+  filepath: C:\Users\Lenovo\Desktop\work\bio_assay_project\bio-assay-project\data\01_raw\AID746AID1284red_test.csv.zip
+  type: pandas.CSVDataSet
+  layer: raw
+
+df_bio:
+  type: pandas.CSVDataSet
+  filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\02_intermediate\df_bio.csv
+  layer: intermediate
+
+df_bio_shape:
+  type: pandas.CSVDataSet
+  filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\02_intermediate\df_bio_shape.csv
+  layer: intermediate
+
+df_bio_count:
+  type: pandas.CSVDataSet
+  filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\02_intermediate\df_bio_count.csv
+  layer: intermediate
+
+X:
+  type: pandas.CSVDataSet
+  filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\02_intermediate\X.csv
+  layer: intermediate
+
+y:
+  type: pandas.CSVDataSet
+  filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\02_intermediate\y.csv
+  layer: intermediate
+
+
+X_sample:
+  type: pandas.CSVDataSet
+  filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\02_intermediate\X_sample.csv
+  layer: intermediate
+
+y_sample:
+  type: pandas.CSVDataSet
+  filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\02_intermediate\y_sample.csv
+  layer: intermediate
+
+scaling_data:
+  type: pandas.CSVDataSet
+  filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\02_intermediate\scaling_data.csv
+  layer: intermediate
+
+X_pca:
+  type: pandas.CSVDataSet
+  filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\02_intermediate\X_pca.csv
+  layer: intermediate
+
+X_pca_100:
+  type: pandas.CSVDataSet
+  filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\02_intermediate\X_pca_100.csv
+  layer: intermediate   
+
+
+# df_bio_logreg:
+#   type: pickle.PickleDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\06_models\df_bio_logreg.pkl
+#   layer: models
+
+# y_pred_train_log:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\y_pred_train_log.csv
+#   layer: model_output
+
+# y_pred_test_log:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\y_pred_test_log.csv
+#   layer: model_output
+
+
+# logreg_accuracy_train:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\logreg_accuracy_train.csv
+#   layer: model_output
+
+# logreg_accuracy_test:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\logreg_accuracy_test.csv
+#   layer: model_output
+
+# logreg_Classi_report:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\logreg_Classi_report.csv
+#   layer: model_output
+
+
+# logreg_CMatrix:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\logreg_CMatrix.csv
+#   layer: model_output
+
+
+# decisionTree:
+#   type: pickle.PickleDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\06_models\decisionTree.pkl
+#   layer: models
+
+# dt_pred_train:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\dt_pred_train.csv
+#   layer: model_output
+
+# dt_pred_test:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\dt_pred_test.csv
+#   layer: model_output
+
+# RandomForest:
+#   type: pickle.PickleDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\06_models\RandomForest.pkl
+#   layer: models
+
+# rf_pred_train:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\rf_pred_train.csv
+#   layer: model_output
+
+# rf_pred_test:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\rf_pred_test.csv
+#   layer: model_output
+
+# rf_pred_test:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\rf_pred_test.csv
+#   layer: model_output
+
+# svm_model:
+#   type: pickle.PickleDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\06_models\svm_model.pkl
+#   layer: models
+
+# svm_pred_train:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\svm_pred_train.csv
+#   layer: model_output
+
+# svm_pred_test:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\svm_pred_test.csv
+#   layer: model_output
+
+# AdaBoost_model:
+#   type: pickle.PickleDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\06_models\AdaBoost_model.pkl
+#   layer: models
+
+
+# Aboost_pred_train:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\Aboost_pred_train.csv
+#   layer: model_output
+
+
+# Aboost_pred_test:
+#   type: pandas.CSVDataSet
+#   filepath: C:\Bioassay_project\Bioassay_project\bioassay-project\data\07_model_output\Aboost_pred_test.csv
+#   layer: model_output
+  
