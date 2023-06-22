@@ -11,7 +11,7 @@ conf/**/*credentials*
 
 # ignore everything in the following folders
 # data/**
-logs/**
+#logs/**
 
 # except their sub-folders
 # !data/**/
