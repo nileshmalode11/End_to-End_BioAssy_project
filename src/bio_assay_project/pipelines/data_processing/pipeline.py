@@ -4,10 +4,10 @@ from .nodes import concat,df_bio_shape,df_bio_count,df_bio_split,df_bio_balance,
 
 def create_pipeline(**kwargs):
     return Pipeline(
-        [
+        [   
             node(
                 func=concat,
-                inputs=["Bioassay_comp_train_raw","Bioassay_comp_test_raw"],
+                inputs=["df746_1284_train","df746_1284_test"],
                 outputs="df_bio",
                 name="concat",
             ),

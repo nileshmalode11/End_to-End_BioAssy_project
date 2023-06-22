@@ -1,12 +1,22 @@
 import logging
 import pandas as pd
 import numpy as np
+# def read_file():
+#     """
+#     Reads the csv file and returns a dataframe
+#     """
+    
+#     Bioassay_comp_train_raw = pd.read_csv("C:\Users\Lenovo\Desktop\work\bio_assay_project\bio-assay-project\data\01_raw\AID746AID1284red_train.csv.zip")
+#     Bioassay_comp_test_raw =pd.read_csv("C:\Users\Lenovo\Desktop\work\bio_assay_project\bio-assay-project\data\01_raw\AID746AID1284red_test.csv.zip")
 
-def concat(Bioassay_comp_train_raw,Bioassay_comp_test_raw):
+#     return Bioassay_comp_train_raw,Bioassay_comp_test_raw
+
+def concat(df746_1284_train,df746_1284_test):
     """This function is used to concat the train and test file of compound.
     input=Bioassay_comp_train_raw,Bioassay_comp_test_raw
     output=df_bio"""
-    df_bio=pd.concat([Bioassay_comp_train_raw,Bioassay_comp_test_raw],axis=0,ignore_index=True)
+    
+    df_bio=pd.concat([df746_1284_train,df746_1284_test],axis=0,ignore_index=True)
     return df_bio
 
 def df_bio_shape(df_bio):
